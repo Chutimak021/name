@@ -1,0 +1,217 @@
+/* src/Profile.css */
+
+/* คอนเทนเนอร์หลักของโปรไฟล์ */
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* กรอบสีแดงที่ด้านบนสุด */
+.profile-header {
+  position: relative;
+  width: 100vw;
+  background-color: rgb(153, 10, 10);
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* กรอบสีเหลืองที่อยู่ด้านล่างของกรอบ */
+.bg-yellow {
+  background-color: rgb(190, 190, 0);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* ปรับ NavBar ให้มีพื้นที่เพียงพอ */
+.navbar {
+  width: 100%; 
+  font-size: 22px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-link, .nav-dropdown, .nav-dropdown-item {
+  font-size: 22px;
+  color: #000000;
+}
+
+.nav-link:hover, .nav-dropdown-item:hover {
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* เนื้อหาของโปรไฟล์ */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* กรอบสีเหลืองรอบรูปโปรไฟล์ */
+.profile-picture-container {
+  background-color: yellow;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* กรอบสีเทาที่ด้านล่างสุด */
+.profile-wint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px; /* ลด padding รอบๆ */
+  border-radius: 12px;
+  background-color: #c4c4c4;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+/* ส่วนของการจัดเรียง header */
+/* ส่วนของการจัดเรียง header */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* กระจายพื้นที่ระหว่างส่วนต่างๆ */
+  align-items: center; /* จัดแนวไอคอนและข้อความให้อยู่ตรงกลาง */
+  width: 110%; /* ทำให้ขยายเต็มความกว้าง */
+  max-width: 1200px; /* จำกัดความกว้างสูงสุดของ header */
+  margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end; /* จัดไอคอนไปทางขวา */
+  align-items: center;
+
+}
+
+
+.language-icon,
+.cart-icon,
+.profile-icon {
+  margin-left: 60px; /* ระยะห่างระหว่างไอคอน */
+  cursor: pointer;
+  display: flex;
+}
+
+.header-rightt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+
+.header-center {
+  flex: 2; /* ทำให้ส่วนนี้กว้างกว่าที่เหลือ */
+  display: flex;
+  justify-content: center; /* จัดให้ input และไอคอนค้นหาตรงกลาง */
+  align-items: center;
+}
+
+.search-input {
+  padding: 15px;
+  font-size: 18px; /* ขนาดฟอนต์ที่เหมาะสม */
+  border: none;
+  border-radius: 30px;
+  width: 250px; /* ขนาดของ input ให้เหมาะสม */
+  margin-right: 10px; /* ระยะห่างระหว่าง input และไอคอนค้นหา */
+  display: flex;
+}
+
+.search-icon {
+  cursor: pointer; /* เพิ่มเคอร์เซอร์ pointer สำหรับการโต้ตอบ */
+  margin-left: -5px; 
+}
+.mfu-logo {
+  width: 100px; /* กำหนดความกว้าง */
+  height: auto; /* ปรับความสูงอัตโนมัติตามสัดส่วน */
+  display: block;
+  margin: 0 auto; /* จัดรูปภาพให้อยู่ตรงกลาง */
+  margin-left: -30px;
+  margin-right: 40px;
+}
+
+.mfu-logo {
+  width: 100px; /* กำหนดความกว้าง */
+  height: auto; /* ปรับความสูงอัตโนมัติตามสัดส่วน */
+  display: block;
+  margin: 0 auto; /* จัดรูปภาพให้อยู่ตรงกลาง */
+  margin-left: -30px;
+  margin-right: 40px;
+
+}
+
+.red-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(153, 10, 10);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 9%;
+  box-sizing: content-box;
+}
+
+.mfu-logo1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 85em /* ใช้ auto แทน margin เพื่อจัดให้อยู่ขวา */
+}
+
+.red-bar-text {
+  color: white;
+  font-size: 26px;
+  margin-left: 20px; /* ระยะห่างระหว่างรูปภาพกับข้อความ */
+
+}
+
+.user-menu {
+  list-style: none;
+  padding: 0;
+  background-color: rgb(114, 113, 113);
+  position: absolute;
+  left: 72%; /* วางเมนูไปทางขวาของไอคอน */
+  top: 6em; /* จัดให้เมนูอยู่ในแนวเดียวกับไอคอน */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.171);
+  display: none; /* แสดงเมื่อเมนูเปิด */
+}
+
+.user-menu.show {
+  display: block; /* แสดงเมื่อเปิดเมนู */
+}
+
+.user-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.user-menu li:hover {
+  background-color: #090909;
+}
+
+
