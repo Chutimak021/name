@@ -147,13 +147,15 @@
   cursor: pointer; /* เพิ่มเคอร์เซอร์ pointer สำหรับการโต้ตอบ */
   margin-left: -5px; 
 }
-.mfu-logo {
-  width: 100px; /* กำหนดความกว้าง */
-  height: auto; /* ปรับความสูงอัตโนมัติตามสัดส่วน */
-  display: block;
-  margin: 0 auto; /* จัดรูปภาพให้อยู่ตรงกลาง */
-  margin-left: -30px;
-  margin-right: 40px;
+.header-left {
+  display: flex;             /* จัดให้เป็นแถวเดียวกัน */
+  align-items: center;       /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+.mfu-title {
+  font-size: 24px;           /* ปรับขนาดของฟอนต์ข้อความ */
+  margin-left: 10px;         /* ระยะห่างจากโลโก้ */
+  white-space: nowrap;       /* ป้องกันไม่ให้ตัดบรรทัด */
 }
 
 .mfu-logo {
@@ -161,7 +163,7 @@
   height: auto; /* ปรับความสูงอัตโนมัติตามสัดส่วน */
   display: block;
   margin: 0 auto; /* จัดรูปภาพให้อยู่ตรงกลาง */
-  margin-left: -30px;
+  margin-left: -100px;
   margin-right: 40px;
 
 }
